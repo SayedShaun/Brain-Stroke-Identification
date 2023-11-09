@@ -4,18 +4,18 @@ This repository contains code for a machine learning project focused on various 
 
 ## Project Structure
 
-.streamlit: Configuration files for Streamlit, a tool for creating web applications.
-Image: (You might describe the purpose of this directory or its contents here.)
-My_CNN_Model: (Details about the CNN model or its usage.)
-My_XGB_Model: (Information about the XGBoost model and its implementation.)
-__pycache__: Python bytecode cache directory.
-ANN_Notebook.ipynb: Jupyter notebook containing the implementation of the Artificial Neural Network.
-CNN_Notebook.ipynb: Jupyter notebook with the implementation of the Convolutional Neural Network.
-LICENSE: MIT License for the project.
-README.md: This file, the README containing information about the project.
-Text_Helper.py: A Python script or module for text-related tasks.
-app.py: Python file for the Streamlit web application.
-requirements.txt: List of required libraries and their versions.
+-.streamlit: Configuration files for Streamlit, a tool for creating web applications.
+-Image: (You might describe the purpose of this directory or its contents here.)
+-My_CNN_Model: (Details about the CNN model or its usage.)
+-My_XGB_Model: (Information about the XGBoost model and its implementation.)
+-__pycache__: Python bytecode cache directory.
+-ANN_Notebook.ipynb: Jupyter notebook containing the implementation of the Artificial Neural Network.
+-CNN_Notebook.ipynb: Jupyter notebook with the implementation of the Convolutional Neural Network.
+-LICENSE: MIT License for the project.
+-README.md: This file, the README containing information about the project.
+-Text_Helper.py: A Python script or module for text-related tasks.
+-app.py: Python file for the Streamlit web application.
+-requirements.txt: List of required libraries and their versions.
 
 ## Usage
 
