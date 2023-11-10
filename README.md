@@ -1,4 +1,4 @@
-![Demo png](https://github.com/SayedShaun/Brain-Stroke-Prediction-and-Detection/assets/126845316/0f1c4592-5cc6-4f05-936d-d2e3a86c9ee1)
+![demo](https://github.com/SayedShaun/Brain-Stroke-Prediction-and-Detection/assets/126845316/2f8eef47-5bbc-4717-954f-f4af9bbcd45b)
 
 # Project Title
 Improving Brain Stroke Diagnosis and Treatment Using AI and Medical Imaging for Enhanced Precision and Patient Care.
