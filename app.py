@@ -16,7 +16,7 @@ xgb_model = joblib.load("My_XGB_Model")
 st.sidebar.image("Image/sidebar_image.png")
 st.sidebar.markdown("# Navigation")
 tabs = st.sidebar.selectbox("", ("Home🏠",
-                             "Image Prediction🖼️",
+                             "Image Detection🖼️",
                              "Early Stroke Prediction💹",
                              "Papers📃",
                              "About❓")
@@ -25,13 +25,14 @@ tabs = st.sidebar.selectbox("", ("Home🏠",
 
 #Home Page
 if tabs == "Home🏠":
-    st.title("Brain Stroke Prediction")
+    st.image("Image/title.png")
+    #st.markdown("## Brain Stroke Prediction and Detection")
     st.image("Image/home.jpg")
     st.write(txt.home_text)
 
 
 #Brain CT Image Page
-elif tabs == "Image Prediction🖼️":
+elif tabs == "Image Detection🖼️":
     st.header("Image Prediction")
     # Define the prediction function
     def get_image_prediction(image, model):
