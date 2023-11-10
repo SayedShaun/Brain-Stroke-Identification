@@ -1,5 +1,7 @@
 ![demo](https://github.com/SayedShaun/Brain-Stroke-Prediction-and-Detection/assets/126845316/2f8eef47-5bbc-4717-954f-f4af9bbcd45b)
 
+Live Demo: https://brain-stroke-prediction.streamlit.app
+
 # Project Title
 Improving Brain Stroke Diagnosis and Treatment Using AI and Medical Imaging for Enhanced Precision and Patient Care.
 
