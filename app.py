@@ -5,9 +5,17 @@ from tensorflow.image import resize
 import joblib
 import pandas as pd
 import sys
-
 from Text_Helper import Text
 txt = Text()
+
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Load your model
 cnn_model = tensorflow.keras.models.load_model("My_CNN_Model")
