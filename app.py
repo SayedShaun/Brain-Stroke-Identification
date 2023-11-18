@@ -5,15 +5,18 @@ from tensorflow.image import resize
 import joblib
 import pandas as pd
 import sys
+from PIL import  Image
 from Text_Helper import Text
 txt = Text()
+
+image = Image.open("Image/home.jpg")
+st.set_page_config(page_title='Brain Stroke',page_icon=image)
 
 hide_streamlit_style = """
 <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 </style>
-
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
@@ -60,7 +63,6 @@ elif tabs == "Image Detection🖼️":
 
     # Upload image
     image_file = st.file_uploader(label="")
-
     if st.button("Click here to Predict") and image_file is not None:
         result = get_image_prediction(image_file, cnn_model)
         if result is not None:
@@ -74,10 +76,8 @@ elif tabs == "Image Detection🖼️":
 #Early Stroke Prediction Page
 elif tabs == "Early Stroke Prediction💹":
     st.header("Input for Early Stroke Prediction")
-
     # User inputs
     age = st.slider("Select Your Age", 0, 120)
-    
     gender = st.selectbox("Select Gender", options=["Male", "Female", "Others"])
     if gender == "Female":
         gender = 0
@@ -86,8 +86,7 @@ elif tabs == "Early Stroke Prediction💹":
     elif gender == "Others":
         gender = 2
 
-    hypertension = 1 if st.selectbox(label="Hypertension Value", options=["Yes", "No"]) == "Yes" else 0
-
+    hypertension = 1 if st.selectbox(label="Hypertension", options=["Yes", "No"]) == "Yes" else 0
     heart_disease = st.number_input("Heart Disease Value") 
     ever_married = 0 if st.selectbox(label="Marrige Stutas", options=["No", "Yes"]) == "No" else 1
     work_type = st.selectbox(label="Work Type", options=["Private", "Self Employed", "Children", "Govt Job", "Never Worked"])
@@ -130,7 +129,6 @@ elif tabs == "Early Stroke Prediction💹":
             sys.exit(0)
         
         prediction = xgb_model.predict(result)
-
         if prediction == 0:
             st.header("There is No Change of Brain Stroke")
             st.image("Image/Health tips for Yes.png")
