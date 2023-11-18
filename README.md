@@ -9,7 +9,7 @@ This repository contains code for a machine learning project focused on various 
 
 ## Project Structure
 
-- .streamlit: Configuration files for Streamlit, a tool for creating web applications.
+- .streamlit: Configuration files for Streamlit, a tool for designing web applications.
 - Image: (All necessary images contained here that have been used for creating the application)
 - My_CNN_Model: (Saved NN Model)
 - My_XGB_Model: (Saved Xgboost Model)
