@@ -68,10 +68,8 @@ elif tabs == "Image Detection🖼️":
         if result is not None:
             if result == "Stroke":
                 st.image('Image/stroke_yes.png', caption="")
-                st.write("Prediction: Stroke")
             else:
                 st.image('Image/stroke_no.png', caption="")
-                st.write("Prediction: Normal")
 
 #Early Stroke Prediction Page
 elif tabs == "Early Stroke Prediction💹":

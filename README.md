@@ -9,10 +9,10 @@ This repository contains code for a machine learning project focused on various 
 
 ## Project Structure
 
-- .streamlit: Configuration files for Streamlit, a tool for creating web applications.
-- Image: (You might describe the purpose of this directory or its contents here.)
-- My_CNN_Model: (Details about the CNN model or its usage.)
-- My_XGB_Model: (Information about the XGBoost model and its implementation.)
+- .streamlit: Configuration files for Streamlit, a tool for designing web applications.
+- Image: (All necessary images contained here that have been used for creating the application)
+- My_CNN_Model: (Saved NN Model)
+- My_XGB_Model: (Saved Xgboost Model)
 - __pycache__: Python bytecode cache directory.
 - ANN_Notebook.ipynb: Jupyter notebook containing the implementation of the Artificial Neural Network.
 - CNN_Notebook.ipynb: Jupyter notebook with the implementation of the Convolutional Neural Network.
@@ -25,6 +25,7 @@ This repository contains code for a machine learning project focused on various 
 ## Usage
 
 - **Setting up Environment:**
+  - Clone Repository https://github.com/SayedShaun/Brain-Stroke-Prediction-and-Detection.git
   - Ensure Python and necessary libraries are installed.
   - Use the `requirements.txt` file to install the required dependencies.
 
