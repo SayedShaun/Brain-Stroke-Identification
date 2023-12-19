@@ -3,3 +3,4 @@ pandas==2.1.2
 streamlit==1.28.1
 tensorflow==2.14.0
 xgboost==2.0.1
+scikit_learn==1.2.2
