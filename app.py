@@ -4,8 +4,6 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from tensorflow.image import resize
 import joblib
 import pandas as pd
-import sklearn
-from sklearn.ensemble import RandomForestClassifier
 import sys
 from PIL import  Image
 from Text_Helper import Text
@@ -24,7 +22,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Load your model
 cnn_model = tensorflow.keras.models.load_model("Saved Models/My_CNN_Model")
-xgb_model = joblib.load("Saved Models/RandomForest_Model")
+rf_model = joblib.load("Saved Models/RandomForest_Model")
 
 st.sidebar.image("Image/sidebar_image.png")
 st.sidebar.markdown("# Navigation")
@@ -128,7 +126,7 @@ elif tabs == "Early Stroke Prediction💹":
             st.markdown("## Please Give Input")
             sys.exit(0)
         
-        prediction = xgb_model.predict(result)
+        prediction = rf_model.predict(result)
         if prediction == 0:
             st.header("There is No Change of Brain Stroke")
             st.image("Image/Health tips for Yes.png")
