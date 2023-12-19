@@ -21,8 +21,8 @@ footer {visibility: hidden;}
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Load your model
-cnn_model = tensorflow.keras.models.load_model("My_CNN_Model")
-xgb_model = joblib.load("My_XGB_Model")
+cnn_model = tensorflow.keras.models.load_model("Saved Models/My_CNN_Model")
+xgb_model = joblib.load("Saved Models/RandomForest_Model")
 
 st.sidebar.image("Image/sidebar_image.png")
 st.sidebar.markdown("# Navigation")
