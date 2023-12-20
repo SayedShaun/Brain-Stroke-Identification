@@ -4,8 +4,6 @@ from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from tensorflow.image import resize
 import joblib
 import pandas as pd
-import sklearn
-from sklearn.ensemble import RandomForestClassifier
 import sys
 from PIL import  Image
 from Text_Helper import Text
