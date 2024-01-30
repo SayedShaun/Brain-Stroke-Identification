@@ -1,8 +1,7 @@
-import streamlit as st
 class Text:
     def __init__(self):
         self.home_text = """
-            The project "Improving Brain Stroke Diagnosis and Treatment Using AI and Medical Imaging for Enhanced Precision and Patient Care" aims to revolutionize the approach to identifying and treating strokes by leveraging advanced artificial intelligence (AI) methodologies in conjunction with medical imaging techniques. Stroke, a leading cause of disability and mortality, demands swift and precise diagnosis for effective intervention. This project seeks to enhance the accuracy and efficiency of stroke diagnosis through the integration of AI algorithms with various imaging modalities, such as MRI, CT scans, and other neuroimaging technologies.
+            The project "Advancements in Neuroimaging: Automated Identification of Brain Strokes through Machine Learning Application" aims to revolutionize the approach to identifying and treating strokes by leveraging advanced artificial intelligence (AI) methodologies in conjunction with medical imaging techniques. Stroke, a leading cause of disability and mortality, demands swift and precise diagnosis for effective intervention. This project seeks to enhance the accuracy and efficiency of stroke diagnosis through the integration of AI algorithms with various imaging modalities, such as MRI, CT scans, and other neuroimaging technologies.
 
             By employing machine learning and deep neural networks, the project endeavors to develop sophisticated algorithms capable of swiftly analyzing vast amounts of imaging data. These AI models aim to identify early signs of strokes, categorize stroke subtypes, and assist in determining the most appropriate treatment plans. The utilization of AI-driven predictive analytics intends to expedite diagnostic processes, enabling healthcare professionals to make timely and informed decisions, consequently improving patient outcomes.
 
