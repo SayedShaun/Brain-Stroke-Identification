@@ -44,7 +44,7 @@ if tabs == "Home🏠":
 
 #Brain CT Image Page
 elif tabs == "Image Detection🖼️":
-    st.header("Image Prediction")
+    st.header("Image Detection")
     # Define the prediction function
     def get_image_prediction(image, model):
         image_size = 224
