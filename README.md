@@ -1,7 +1,7 @@
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
 
-![image](https://github.com/SayedShaun/Brain-Stroke-Identification/assets/126845316/6d2ecd17-54fb-4725-aaf4-edea92d32f0c)
+![image](https://github.com/SayedShaun/Brain-Stroke-Identification/assets/126845316/9b589a9a-3e8e-4e57-8942-958c64aa2080)
 
 Live Demo: https://brain-stroke-prediction.streamlit.app
 
