@@ -36,7 +36,7 @@ tabs = st.sidebar.selectbox("", ("Home🏠",
 
 #Home Page
 if tabs == "Home🏠":
-    st.image("Image/title.png")
+    st.image("Image/title.jpg")
     #st.markdown("## Brain Stroke Prediction and Detection")
     st.image("Image/home.jpg")
     st.write(txt.home_text)
