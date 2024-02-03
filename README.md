@@ -3,7 +3,7 @@
 
 ![image](https://github.com/SayedShaun/Brain-Stroke-Identification/assets/126845316/9b589a9a-3e8e-4e57-8942-958c64aa2080)
 
-Live Demo: https://brain-stroke-prediction.streamlit.app
+Live Demo: https://brain-stroke.streamlit.app
 
 # Project Title
 Advancements in Neuroimaging: Automated Identification of Brain Strokes through Machine Learning Application.
