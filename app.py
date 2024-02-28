@@ -26,13 +26,15 @@ rf_model = joblib.load("Saved Models/RandomForest_Model")
 
 st.sidebar.image("Image/sidebar_image.png")
 st.sidebar.markdown("# Navigation")
-tabs = st.sidebar.selectbox("", ("Home🏠",
-                             "Image Detection🖼️",
-                             "Early Stroke Prediction💹",
-                             "Papers📃",
-                             "About❓")
-                            )
-
+tabs = st.sidebar.selectbox(
+    "", 
+    ("Home🏠",
+     "Image Detection🖼️",
+     "Early Stroke Prediction💹",
+     "Papers📃",
+     "About❓"
+     )
+)
 
 #Home Page
 if tabs == "Home🏠":
@@ -48,9 +50,12 @@ elif tabs == "Image Detection🖼️":
     # Define the prediction function
     def get_image_prediction(image, model):
         image_size = 224
-        image = load_img(image, color_mode='grayscale',
-                        target_size=(image_size, image_size),
-                        interpolation='bilinear')
+        image = load_img(
+            image, 
+            color_mode='grayscale',
+            target_size=(image_size, image_size),
+            interpolation='bilinear'
+        )
         image = img_to_array(image) / 255.0 
         image = resize(image, [image_size, image_size]) 
         image = tensorflow.expand_dims(image, axis=0)
@@ -76,7 +81,10 @@ elif tabs == "Early Stroke Prediction💹":
     st.header("Input for Early Stroke Prediction")
     # User inputs
     age = st.slider("Select Your Age", 0, 120)
-    gender = st.selectbox("Select Gender", options=["Male", "Female", "Others"])
+    gender = st.selectbox(
+        "Select Gender", 
+        options=["Male", "Female", "Others"]
+    )
     if gender == "Female":
         gender = 0
     elif gender == "Male":
@@ -84,10 +92,20 @@ elif tabs == "Early Stroke Prediction💹":
     elif gender == "Others":
         gender = 2
 
-    hypertension = 1 if st.selectbox(label="Hypertension", options=["Yes", "No"]) == "Yes" else 0
+    hypertension = 1 if st.selectbox(
+        label="Hypertension", 
+        options=["Yes", "No"]) == "Yes" else 0
+    
     heart_disease = st.number_input("Heart Disease Value") 
-    ever_married = 0 if st.selectbox(label="Marrige Stutas", options=["No", "Yes"]) == "No" else 1
-    work_type = st.selectbox(label="Work Type", options=["Private", "Self Employed", "Children", "Govt Job", "Never Worked"])
+    
+    ever_married = 0 if st.selectbox(
+        label="Marrige Stutas", 
+        options=["No", "Yes"]) == "No" else 1
+    
+    work_type = st.selectbox(
+        label="Work Type", 
+        options=["Private", "Self Employed", "Children", "Govt Job", "Never Worked"])
+    
     if work_type == "Govt Job":
         work_type = 0
     elif work_type == "Never Worked":
@@ -99,10 +117,24 @@ elif tabs == "Early Stroke Prediction💹":
     elif work_type == "Children":
         work_type = 4
 
-    residence_type = 0 if st.selectbox(label="Resident Type", options=["Rural", "Urban"]) == "Rural" else 1
+    residence_type = 0 if st.selectbox(
+        label="Resident Type", 
+        options=["Rural", "Urban"]) == "Rural" else 1
+    
     avg_glucose_level = st.number_input("Average Glucose Level")
+
     bmi = st.number_input("BMI")
-    smoking_status = st.selectbox(label="Smoking Stutas", options=["Never Smoked", "Formerly Smoked", "Reguler Smokes", "Smokes Sometimes"])
+    
+    smoking_status = st.selectbox(
+        label="Smoking Stutas", 
+        options=[
+            "Never Smoked", 
+            "Formerly Smoked", 
+            "Reguler Smokes", 
+            "Smokes Sometimes"
+        ]
+    )
+    
     if smoking_status == "Never Smoked":
         smoking_status = 3
     elif smoking_status == "Smokes Sometimes":
@@ -113,15 +145,47 @@ elif tabs == "Early Stroke Prediction💹":
         smoking_status = 1
 
 
-    def get_data(gender, age, hypertension, heart_disease, ever_married, work_type, residence_type, avg_glucose_level, bmi, smoking_status):
-        data = pd.DataFrame([[
-        gender, age, hypertension, heart_disease, ever_married, work_type, residence_type, avg_glucose_level, bmi, smoking_status
-        ]])
+    def get_data(
+            gender: str, 
+            age: int, 
+            hypertension: str, 
+            heart_disease: float, 
+            ever_married: str, 
+            work_type: str, 
+            residence_type: str, 
+            avg_glucose_level: float, 
+            bmi: float, 
+            smoking_status: str
+        ):
+        data = pd.DataFrame(
+            [[gender, 
+              age, 
+              hypertension, 
+              heart_disease, 
+              ever_married, 
+              work_type, 
+              residence_type, 
+              avg_glucose_level, 
+              bmi, 
+              smoking_status]]
+        )
         return data
     
     
     if st.button("Predict Stroke"):
-        result = get_data(gender, age, hypertension, heart_disease, ever_married, work_type, residence_type, avg_glucose_level, bmi, smoking_status)
+        result = get_data(
+            gender, 
+            age, 
+            hypertension, 
+            heart_disease, 
+            ever_married, 
+            work_type, 
+            residence_type, 
+            avg_glucose_level, 
+            bmi, 
+            smoking_status
+        )
+
         if age == 0:
             st.markdown("## Please Give Input")
             sys.exit(0)
