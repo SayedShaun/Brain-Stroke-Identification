@@ -6,7 +6,7 @@
 Live Demo: https://brain-stroke.streamlit.app
 
 # Project Title
-Advancements in Neuroimaging: Automated Identification of Brain Strokes through Machine Learning Application.
+Advancement in Neuroimaging: Automated Identification of Brain Strokes through Machine Learning.
 
 This repository contains code for a machine learning project focused on various models like Convolutional Neural Networks (CNN), eXtreme Gradient Boosting (XGBoost), and an Artificial Neural Network (ANN). The project also includes Streamlit integration for creating an interactive web application.
 
